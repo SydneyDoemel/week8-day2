@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-1{
+  background-color: red;
+  border: none;
+  
+}
+
+.btn-1:hover{
+  background-color: rgb(110, 19, 19);
+
+}
+.btn-2{
+  background-color: orange;
+  border: none;
+}
+.btn-2:hover{
+  background-color: rgb(147, 55, 22);
+
+}
+.btn-3{
+  background-color: green;
+  border: none;
+}
+.btn-3:hover{
+  background-color: rgb(2, 80, 45);
+
+}
+.btn-4{
+  background-color: blue;
+  border: none;
+}
+.btn-4:hover{
+  background-color: rgb(18, 62, 112);
+
+}
+.btn-1, .btn-2, .btn-3, .btn-4{
+  font-weight: bold;
+}
+
+.home{
+  font-size: 5rem;
+  text-align: center;
+}
+
+.subhome{
+  font-size: 2rem;
+  text-align: center;
+}
