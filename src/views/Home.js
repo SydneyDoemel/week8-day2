@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css';
+import '../App.css';
 import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
@@ -7,8 +7,12 @@ export default class Home extends Component {
     return (
         <>
       <div className="home">Home Page</div>
-      <p className="subhome">Starting number: 100</p>
       
+      <div className="my-btns btn-group btn-group-lg d-flex justify-content-center m-5 row">
+      <Link to='/todo' className="btn btn-primary pr-5 pl-5">Go To Your To-Do List</Link>
+  
+      
+      </div>
       </>
     )
   }

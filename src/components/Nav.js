@@ -16,12 +16,13 @@ export default class Nav extends Component {
             <li className="nav-item active">
               <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
+         
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Result
+                To Do List
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/result">See Result</Link>
+                <Link className="dropdown-item" to="/todo">To Do List</Link>
             
               </div>
             </li>

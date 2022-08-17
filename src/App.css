@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+.todo-label{
+  font-size: 1.5rem;
+}
+
+
+.container4 {  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "todo-text todo-btn";
+  
+  margin-left: 8vw;
+  margin-right: 8vw;
+  padding-top: 2vh;
+}
+
+.todo-text { grid-area: todo-text; 
+  padding: 1vw;
+  border: 2px solid rgba(157, 157, 157, .2);
+  border-radius: 10px;
+    word-break: break-word;
+
+}
+
+.todo-btn { grid-area: todo-btn; }
