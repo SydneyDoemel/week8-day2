@@ -9,8 +9,8 @@ export default class Todo extends Component {
             items:[],
             currentItem:{
               text:'',
-              key: '',
-              done: false
+              key: ''
+             
             }
         }
     }
@@ -43,7 +43,19 @@ export default class Todo extends Component {
       items: filteredItems
     })
   }
-
+  // markDone = (key_) => {
+  //   for (x in this.state.items){
+  //     if (x.key=key_){
+  //       this.setState({
+  //         currentItem{
+  //           done: true
+  //         }
+  //       })
+  //     }
+  //   }
+    
+  //   console.log(this.currentItem)
+  // }
   render() {
     return (
       <>
@@ -54,7 +66,7 @@ export default class Todo extends Component {
         <input className="col-2 btn btn-outline-dark" type="submit" value="Submit" />
         </form>
       </div>
-      <ListItems items={this.state.items} deleteItem = {this.deleteItem} done={this.state.done}/>
+      <ListItems items={this.state.items} deleteItem = {this.deleteItem} />
       </>
     )
   }
