@@ -16,13 +16,17 @@ export default class Nav extends Component {
             <li className="nav-item active">
               <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/todo">To-Do List</Link>
+            </li>
          
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                To Do List
+                Hello, Guest
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/todo">To Do List</Link>
+                <Link className="dropdown-item" to="/signup">Sign Up</Link>
+                <Link className="dropdown-item" to="/login">Log In</Link>
             
               </div>
             </li>
@@ -30,7 +34,7 @@ export default class Nav extends Component {
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>

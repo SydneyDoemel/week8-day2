@@ -22,6 +22,21 @@ export default class Todo extends Component {
       }
     })
   }
+  sendCreateTodo = async (e) => {
+    e.preventDefault();
+    const res = await fetch('http://localhost:5000/api/todo/create', {
+        method: "POST",
+        headers: {
+            Authorization: `Bearer ${this.props.user.token}`,
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({
+            item: e.target.item.value
+        })
+    });
+    const data = await res.json();
+    console.log(data)
+};
 
   addItem = (e) => {
     e.preventDefault();
